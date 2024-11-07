@@ -36,10 +36,12 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  flutter_native_splash: ^2.4.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: "^0.14.1"
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -89,3 +91,27 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+
+
+flutter_native_splash:
+  color: "#ffffff"
+  background_image: images/log.png
+  android_12:
+    image: images/log.png # Use the new 960x960 icon here
+    # icon_background_color: "#FFFFFF" 
+  android_gravity: center
+  ios_content_mode: scaleAspectFit
+  fullscreen: true
+
+
+flutter_launcher_icons:
+  image_path: images\res\mipmap-xxxhdpi\ic_launcher.png
+
+  android: "launcher_icon"
+  image_path_android: images/log.png
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  adaptive_icon_background: images\res\mipmap-xxxhdpi\ic_launcher_adaptive_back.png
+  adaptive_icon_foreground: images\res\mipmap-xxxhdpi\ic_launcher_adaptive_fore.png
+  ios: true
+  image_path_ios: images\res\mipmap-xxxhdpi\ic_launcher.png
+  remove_alpha_channel_ios: true
